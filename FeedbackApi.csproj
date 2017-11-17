@@ -13,7 +13,6 @@
     <PackageReference Include="Microsoft.AspNetCore.Antiforgery" Version="2.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.0.1" />
-    
   </ItemGroup>
 
   <ItemGroup>

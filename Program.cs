@@ -20,7 +20,7 @@ namespace FeedbackApi
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
-                .UseUrls("http://f-appen.scm.azurewebsites.net:443")
+                .UseUrls("http://localhost:5000")
                 .Build();
     }
 }

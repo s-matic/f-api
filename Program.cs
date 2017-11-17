@@ -19,8 +19,11 @@ namespace FeedbackApi
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                .UseUrls("http://*:5000")
+                .UseKestrel()
+                .UseContentRoot(Directory.GetCurrentDirectory())
+                .UseIISIntegration()
                 .UseStartup<Startup>()
-                .UseUrls("http://localhost:5000")
                 .Build();
     }
 }

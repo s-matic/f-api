@@ -11,14 +11,14 @@ using System;
 namespace FeedbackApi.Migrations
 {
     [DbContext(typeof(FeedbackContext))]
-    [Migration("20171116124826_InitialCreate")]
+    [Migration("20171117094421_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.0.1-rtm-125");
+                .HasAnnotation("ProductVersion", "2.0.0-rtm-26452");
 
             modelBuilder.Entity("FeedbackApi.Models.Feedback", b =>
                 {
@@ -26,6 +26,8 @@ namespace FeedbackApi.Migrations
                         .ValueGeneratedOnAdd();
 
                     b.Property<DateTime>("Date");
+
+                    b.Property<bool>("IsOverrideAble");
 
                     b.Property<bool>("IsPositive");
 

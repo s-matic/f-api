@@ -12,10 +12,11 @@ namespace FeedbackApi.Migrations
                 name: "Feedbacks",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false)
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    Date = table.Column<DateTime>(nullable: false),
-                    IsPositive = table.Column<bool>(nullable: false)
+                    Date = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    IsOverrideAble = table.Column<bool>(type: "INTEGER", nullable: false),
+                    IsPositive = table.Column<bool>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {

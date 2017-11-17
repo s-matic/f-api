@@ -17,7 +17,7 @@ namespace FeedbackApi.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.0.1-rtm-125");
+                .HasAnnotation("ProductVersion", "2.0.0-rtm-26452");
 
             modelBuilder.Entity("FeedbackApi.Models.Feedback", b =>
                 {
@@ -25,6 +25,8 @@ namespace FeedbackApi.Migrations
                         .ValueGeneratedOnAdd();
 
                     b.Property<DateTime>("Date");
+
+                    b.Property<bool>("IsOverrideAble");
 
                     b.Property<bool>("IsPositive");
 

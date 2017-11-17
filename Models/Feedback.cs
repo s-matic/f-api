@@ -7,5 +7,6 @@ namespace FeedbackApi.Models
         public int Id { get; set; }
         public DateTime Date { get; set; }
         public bool IsPositive { get; set; }
+        public bool IsOverrideAble {get; set;}
     }
 }
